@@ -22,6 +22,23 @@ header{
 	padding: 20px 10px;
 }
 
+#home{
+
+}
+
+#title a span{
+	font-family: 'Share Tech Mono', monospace;
+	font-weight: bold;
+	font-size: 25px;
+	color: #0F0;
+	transition-duration: 0.5s;
+}
+
+#title a span:hover{
+	color: white;
+	transition-duration: 0.5s;
+}
+
 #title a{
 	font-family: 'Share Tech Mono', monospace;
 	font-weight: bold;
@@ -31,19 +48,6 @@ header{
 }
 
 #title a:hover{
-	color: white;
-	transition-duration: 0.5s;
-}
-
-#title{
-	font-family: 'Share Tech Mono', monospace;
-	font-weight: bold;
-	font-size: 25px;
-	color: #0F0;
-	transition-duration: 0.5s;
-}
-
-#title:hover{
 	color: white;
 	transition-duration: 0.5s;
 }
@@ -111,7 +115,7 @@ header #header-options li a:hover{
 	position: absolute;
 	z-index: -10;
 	width: 100%;
-	height: 1920px;
+	height: 100%;
 }
 
 h2{
@@ -156,14 +160,11 @@ h2{
 	margin-top: 330px;
 	overflow: hidden;
 	padding: 20px 10px;
-	
 }
 
 #container{
 	overflow: hidden;
 	margin-top: 30px;
-	border-color: red;
-	
 }
 
 h3{
@@ -238,45 +239,50 @@ span{
 	transition-duration: 0.2s;
 }
 
-#containerPrincipalEscolaridade{
-	font-family: 'Share Tech Mono', monospace;
-	display: inline-block;
-	vertical-align: text-top;
-    margin-top: 100px;
-}
-
 #escolaridade{
 	background-color: black;
 	margin-top: 0px;
 	overflow: hidden;
-	padding: 20px 10px;
+	
+}
+
+#containerPrincipalEscolaridade{
+	font-family: 'Share Tech Mono', monospace;
+	display: grid;
+	grid-template-columns: 1fr 3fr; 
+	vertical-align: text-top;
+    margin-top: 100px;
+}
+
+#atalhosEscolaridade{
+	list-style: none;
+	justify-self: center;
+	grid-column: 1/1;
+	width: 60%;
+	padding: 12px;
+	margin-left: 15px;
+	margin-top: 25%;
 }
 
 #atalhosEscolaridade li a{
 	font-style: bold;
 	color: white;
 	font-size: 16px;
-	transition-duration: 1s;
 }
 
 #atalhosEscolaridade li a:hover{
-	transition-duration:1s;
-	text-decoration: underline;
-	text-decoration-color: #0F0;
-}
-
-#atalhosEscolaridade{
-	display: inline-block;
-	padding: 12px;
-	width: 15%;
+	color: #0F0;
 }
 
 #containerEscolaridade{
-	display: inline-block;
-	margin-left: 50px;
+	grid-column: 2/2;
+	padding: 10px;
+	margin-left: 15px;
+
 }
 
 #containerEscolaridade h3{
+	margin-top: 0;
 	color: white;
 	font-size: 35px;
 }
@@ -293,8 +299,9 @@ span{
 
 #cursos{
 	vertical-align: text-top;
-	padding-left: 27%;
-	margin-top: 150px;
+	grid-column: 2/2;
+	height: 80%;
+	margin-left: 15px;
 }
 
 #cursos h3{
@@ -312,6 +319,52 @@ span{
 	font-size: 18px;
 }
 
-#verMais:hover{
+#verMais a:hover{
 	color: #0F0;
+}
+
+#skills{
+	grid-column: 2/2;
+	margin-top: 0;
+}
+
+#skills h3{
+	color: white;
+	font-size: 35px;
+	margin-left: 15px;
+}
+
+#skillsContainer{
+
+}
+
+#imgCorrection{
+	width: 50px;
+	height: 50px;
+	padding: 15px;
+}
+
+#imgCorrection:hover{
+	opacity: 30%;
+}
+
+#imgCorrection2{
+	width: 45px; 
+	height: 52px;
+	padding: 15px;
+}
+
+#imgCorrection2:hover{
+	opacity: 30%;
+}
+
+#imgCorrection3{
+	width: 60px;
+	height: 60px;
+	margin-top: 1px;
+	padding: 15px;
+}
+
+#imgCorrection3:hover{
+	opacity: 30%;
 }
