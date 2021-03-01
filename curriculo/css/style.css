@@ -81,8 +81,11 @@ header li{
 }
 
 header #header-options li a:hover{
-	text-decoration: underline #0F0 3px;
-	transition-duration: 2s;
+	color: #0F0;
+}
+
+.active{
+	color: #0F0;
 }
 
 #header-options{
