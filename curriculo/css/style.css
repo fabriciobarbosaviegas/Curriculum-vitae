@@ -258,11 +258,27 @@ span{
 	list-style: none;
 	justify-self: center;
 	grid-column: 1/1;
-	width: 60%;
+	width: 12%;
 	padding: 12px;
 	margin-left: 15px;
 	margin-top: 25%;
 }
+
+.sticky{
+	list-style: none;
+	justify-self: center;
+	grid-column: 1/1;
+	height: 15%;
+	position: fixed;
+	margin-left: 0px;
+	z-index: 1;
+	top: -200px;
+	left: 111px;
+	background: black;
+	overflow-x: hidden;
+	padding: 12px;
+}
+
 
 #atalhosEscolaridade li a{
 	font-style: bold;
@@ -367,4 +383,110 @@ span{
 
 #imgCorrection3:hover{
 	opacity: 30%;
+}
+
+#projetos{
+	width: 100%;
+    margin-top: 200px;
+}
+
+#containerProjetos{
+    justify-content: center;
+}
+
+#projetos h3{
+	color:white;
+	text-align: center;
+}
+
+.cards{
+	max-width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1;
+	margin: 20px;
+	padding: 20px;
+	letter-spacing: 1px;
+	border: 2px solid black;
+	border-radius: 4px;
+	transition: all .3s ease;
+	background-color: #202020;
+	
+}
+
+.cards:hover{
+	opacity: 50%;
+}
+
+.cards h4{
+	font-size: 30px;
+	margin: 16px 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-family: 'Share Tech Mono', monospace;
+	color: white;
+
+}
+
+.cards p{
+	font-size: 17px;
+	color: white;	
+}
+
+.cards ul{
+	margin-left: -50px;
+	list-style-type: circle;
+
+}
+
+.cards ul li{
+	display: inline-block;
+	color: #0F0;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Share Tech Mono', monospace;
+}
+
+.cards ul li:hover{
+}
+
+.cards .fas{
+	font-size: 70px;
+	margin: 16px 0;
+	color: #0F0;
+}
+
+.cards .fas:hover{
+
+}
+
+.cards .material-icons{
+	font-size: 70px;
+	margin: 16px 0;
+	color: #0F0;
+}
+
+.cards .material-icons:hover{
+
+}
+
+.cards > *{
+	flex: 1 1 100%;
+
+}
+
+#containerProjetos{
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+@media (max-width: 900px){
+	.services{
+		display: flex;
+		flex-direction: column;
+	}
 }
