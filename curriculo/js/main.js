@@ -1,7 +1,16 @@
 //active menu
 var sections = document.querySelectorAll("section");
+// Get the navbar
+var navbar = document.getElementById("atalhosEscolaridade");
 
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
 onscroll = function () {
+  if (window.pageYOffset >= sticky ) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
   var scrollPosition = document.documentElement.scrollTop;
 
   sections.forEach((section) => {
@@ -18,15 +27,38 @@ onscroll = function () {
 };
 
 var removeAllActiveClasses = function () {
-  document.querySelectorAll("div li a").forEach((el) => {
+  document.querySelectorAll("div div li a").forEach((el) => {
     el.classList.remove("active");
   });
 };
 
 var addActiveClass = function (id) {
-  var selector = `div li a[href="#${id}"]`;
+  var selector = `div div li a[href="#${id}"]`;
   document.querySelector(selector).classList.add("active");
+  if (id == "projetos") {
+  	 navbar.classList.remove("sticky");
+  }
 };
+
+
+
+var navLinks = document.querySelectorAll("div div li a");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    var currentId = e.target.attributes.href.value;
+    var section = document.querySelector(currentId);
+    var sectionPos = section.offsetTop;
+
+    window.scroll({
+      top: sectionPos,
+      behavior: "smooth",
+    });
+  });
+});
+
+
 
 // Initialising the canvas
 var canvas = document.querySelector('canvas'),
@@ -34,10 +66,10 @@ var canvas = document.querySelector('canvas'),
 
 // Setting the width and height of the canvas
 canvas.width = window.innerWidth;
-canvas.height = 1920;
+canvas.height = window.innerHeight;
 
 // Setting up the letters
-var letters = 'MECONTRATA!CONTRACTME!MECONTRATA!CONTRACTME!MECONTRATA!CONTRACTME!MECONTRATA!CONTRACTME!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!CONTRACTME!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!';
+var letters = 'MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!';
 letters = letters.split('');
 
 // Setting up the columns
@@ -122,3 +154,4 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
+
