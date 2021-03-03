@@ -213,7 +213,7 @@ span{
 	color: #0F0;
 }
 
-#card{
+#containerSobre{
 	margin-left: 50px;
 	color: white; 
 	display: inline-block; 
@@ -263,22 +263,6 @@ span{
 	margin-left: 15px;
 	margin-top: 25%;
 }
-
-.sticky{
-	list-style: none;
-	justify-self: center;
-	grid-column: 1/1;
-	height: 15%;
-	position: fixed;
-	margin-left: 0px;
-	z-index: 1;
-	top: -200px;
-	left: 111px;
-	background: black;
-	overflow-x: hidden;
-	padding: 12px;
-}
-
 
 #atalhosEscolaridade li a{
 	font-style: bold;
@@ -351,6 +335,7 @@ span{
 }
 
 #skillsContainer{
+	width: 600px;
 
 }
 
@@ -383,6 +368,16 @@ span{
 
 #imgCorrection3:hover{
 	opacity: 30%;
+}
+
+#skills{
+	width: 100%;
+    margin-top: 200px;	
+}
+
+#skills h3{
+	color:white;
+	text-align: center;
 }
 
 #projetos{
@@ -463,6 +458,18 @@ span{
 
 }
 
+.cards .fab{
+	font-size: 70px;
+	margin: 16px 0;
+	border-color: #0D1218;
+	color: #0F0;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.cards .fab:hover{
+
+}
+
 .cards .material-icons{
 	font-size: 70px;
 	margin: 16px 0;
@@ -490,3 +497,191 @@ span{
 		flex-direction: column;
 	}
 }
+
+#contato{
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#contato div h3{
+	color: white;
+	font-size: 35px;
+	margin-left: 15px;
+}
+
+#containerCards{
+	justify-content: center;
+}
+
+footer{
+	background-color: #181818;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border-top-style: outset;
+    border-color: #0F0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.content1{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #202020;
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #202020;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #0F0;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: black;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #0F0;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #0F0;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #000;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #0F0;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+
