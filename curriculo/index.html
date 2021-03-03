@@ -4,9 +4,11 @@
 	<title>Fabricio Barbsoa Viegas</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -16,12 +18,16 @@
 			</a>	
 		</li>
 		<div id="header-options">
-			<li><a href="#home" class="active">Home</a></li>
-			<li><a href="#sobre">Sobre</a></li>
-			<li><a href="#escolaridade">Escolaridade</a></li>
-			<li><a href="#projetos">Projetos</a></li>
-			<li><a href="#contato">Contato</a></li>
-			<li><a href="#us">&#x1F1FA&#x1F1F8</a></li>
+			<div>
+				<li><a href="#home" class="active">Home</a></li>
+				<li><a href="#sobre">Sobre</a></li>
+				<li><a href="#escolaridade">Escolaridade</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projetos">Projetos</a></li>
+				<li><a href="#contato">Contato</a></li>
+				<li><a href="#us">&#x1F1FA&#x1F1F8</a></li>
+			</div>
+			
 		</div>
 	</header>
 	<section id="home" data-type="Home">
@@ -39,7 +45,7 @@
 	<section id="sobre"  data-type="Sobre">
 		<div id="container" align="center">
 			<img src="https://lh3.googleusercontent.com/RtCZTNnvrPiec1zNinWZOISYHJUfJBOeXsA_qfoQYz3cSJ85-hOB4iSXYUFWGvsCTFdsFVuu83uEpduC3c3xbPaupWNkwB35M5UNR8Rq3l5DP7vcVMMLqAZulHkdJtcgYT6V5XKTeHn_PfvxGXcMSUKVi7TRyNEqopPFHsEsT6xQ_h7dqu_re3_2P0C00lM9WxR_ODkQTS-2N70O5HPQHz4jpq2OG5VwWxVOUihIhzr7_xLw6XFAt2Q_cxcVKsoMqlaBaWYy9sIyheEuasgPPxu05tcxSWKKY0soSljCVd2nc_OQUd6Fb6WeniEPQBBkQ5hqhCmp7Qbif4qjLjIeHpwtJrtAPOXcQHY4BCiIjVKGSJUdPBWUj8SsTLfDnv8ei0Sr7Tby7aYhA-BRYhTyqPVW9P1yPlgMJUoBfo_M56PJDvwOkw3OHTWMmv8kwJ4X6QjIOw6FMUD9VgaOUPsySdPc7euVwVh6GXWKjTQB96zHnVbGzzdlaKgJIp0HOdDjgRmGwiIAvYc8utloFWsIgAVXhTYFgoQHZbAhdXkYrQBWgo5NUUUTQNb_FebUFzTGSmj-rHTSII_vI3JhorI9Q2cbEzAhbZcZnZAwhABZg6SNqsibcDTt-sjLRJXZ0z9IwW4ffxUxq-8oIxRRMS5q8-TR4TwSiweFXnixCTCrtYfdAf6fQGZbsNJNJ2k86PHsObv9wBvY4Z22ZfLgIdTAX8Y=w462-h615-no?authuser=0" id="img">
-			<div id="card">
+			<div id="containerSobre">
 				<h3>Sobre mim:</h3>
 				<div id="about">
 					<p>Nome: <span id="typewriting">Fabrício Barbosa Viegas</span></p>
@@ -56,11 +62,6 @@
 	</section>
 	<section id="escolaridade" data-type="Escolaridade">
 		<div id="containerPrincipalEscolaridade">
-			<div id="atalhosEscolaridade">
-				<li><a href="#escolaridade" id="active">Escolaridade</a></li>
-				<li><a href="#cursos">Cursos</a></li>
-				<li><a href="#skills">Skills</a></li>
-			</div>
 			<div id="containerEscolaridade">
 				<h3>Escolaridade:</h3>
 				<h4><span id="typewriting">>> I.E.E Conêgo Luiz Walter Hanquet</span></h4>
@@ -102,27 +103,132 @@
 				<p id="verMais"><a href="https://www.exattuscamaqua.com.br/nossoscursos/informatica/" target="_blank">>> Ver mais!</a>
 				<br></p>
 			</div>
-			<div id="skills" data-type="Skills">
-				<h3>Skills</h3>
-				<div id="skillsContainer">
-					<a href="https://github.com/fabriciobarbosaviegas?tab=repositories&q=&type=&language=html"  data-toggle="tooltip" title="HTML 5" target="_blank"><img src="/icons/html.png" id="imgCorrection"></a>
-					<a href="https://github.com/fabriciobarbosaviegas/form-animado" target="_blank" data-toggle="tooltip" title="CSS 3"><img src="/icons/css.png" id="imgCorrection"></a>
-					<a href="https://github.com/fabriciobarbosaviegas?tab=repositories&q=&type=&language=javascript" target="_blank"><img src="/icons/javascript.png" id="imgCorrection" data-toggle="tooltip" title="Javascript"></a>
-					<a href="https://github.com/fabriciobarbosaviegas?tab=repositories&q=&type=&language=php"  data-toggle="tooltip" title="PHP" target="_blank"><img src="icons/php.png" id="imgCorrection2"></a>
-					<a href="https://github.com/fabriciobarbosaviegas/Sistema-de-anotacoes-simples"  data-toggle="tooltip" title="Node JS" target="_blank"><img src="icons/node.png" id="imgCorrection"></a>
-					<a href="https://github.com/fabriciobarbosaviegas?tab=repositories&q=&type=&language=mongodb"  data-toggle="tooltip" title="MongoDB" target="_blank"><img src="icons/mongo.png" id="imgCorrection"></a>
-					<a href="https://github.com/fabriciobarbosaviegas?tab=repositories&q=&type=&language=c"  data-toggle="tooltip" title="C" target="_blank"><img src="icons/c.png" id="imgCorrection"></a>
-					<a href="https://github.com/fabriciobarbosaviegas?tab=repositories&q=&type=&language=python"  data-toggle="tooltip" title="Python 3" target="_blank"><img src="icons/python.png" id="imgCorrection"></a>
-					<a href="https://github.com/fabriciobarbosaviegas/Sistema-de-anotacoes-simples" data-toggle="tooltip" title="MariaDB"  target="_blank"><img src="/icons/loonapix_16146315522342123445.png" id="imgCorrection"></a>
-					<a href="https://github.com/fabriciobarbosaviegas/Sistema-de-anotacoes-simples"  data-toggle="tooltip" title="MySQL" target="_blank"><img src="icons/st_small_507x507-pad_600x600_f8f8f8-removebg-preview.png" id="imgCorrection3"></a>
-					<img src="/icons/linux.png" id="imgCorrection"  data-toggle="tooltip" title="Linux">
-					<img src="/icons/st_small_507x507-pad_600x600_f8f8f8__1_-removebg-preview.png" data-toggle="tooltip" title="Bash/Terminal" id="imgCorrection3"></a>
-					<a href="https://github.com/fabriciobarbosaviegas"  data-toggle="tooltip" title="Git" target="_blank"><img src="https://hexstickers.com/asset/git.png" id="imgCorrection"></a>
-					<a href="https://github.com/fabriciobarbosaviegas"  target="_blank"  data-toggle="tooltip" title="GitHub"><img src="https://cdn4.iconfinder.com/data/icons/miu-hexagon-flat-social/60/github-hexagon-social-media-512.png" id="imgCorrection" target="_blank"></a>
-					<img src="https://ahsankhan.me/images/skills/photoshop.png"  data-toggle="tooltip" title="Photoshop"  id="imgCorrection">
-					<img src="https://ahsankhan.me/images/skills/wordpress.png"  data-toggle="tooltip" title="WordPress" id="imgCorrection">
-				</div>
-			</div>
+	</section>
+	<section id="skills">
+		<div>
+			<h3>Skills:</h3>
+		</div>
+		<div id="containerProjetos">
+			<a href="https://github.com/fabriciobarbosaviegas?tab=repositories&q=&type=&language=html" target="_blank"><div class="cards">
+				<div class="fab fa-html5"></div>
+				<h4>HTML5</h4>
+				<ul>
+					<li>Linguagem de marcação</li>
+				</ul>
+				<p>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web.</p>
+			</div></a>
+			<a href="https://github.com/fabriciobarbosaviegas?tab=repositories&q=&type=&language=css" target="_blank"><div class="cards">
+				<div class="fab fa-css3-alt"></div>
+				<h4>CSS3</h4>
+				<ul>
+					<li>Linguagem de estilo</li>
+				</ul>
+				<p>CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML ou em XML. O CSS descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias.</p>
+			</div></a>
+			<a href="https://github.com/fabriciobarbosaviegas?tab=repositories&q=&type=&language=javascript" target="_blank"><div class="cards">
+				<div class="fab fa-js-square"></div>
+				<h4>Javascript</h4>
+				<ul>
+					<li>Linguagem de programção</li>
+				</ul>
+				<p>JavaScript é uma linguagem leve, interpretada e baseada em objetos com funções de primeira classe, mais conhecida como a linguagem de script para páginas Web, mas usada também em vários outros ambientes sem browser, tais como node.js,  Apache CouchDB e Adobe Acrobat. </p>
+			</div></a>
+		</div>
+		<div id="containerProjetos">
+			<a><div class="cards">
+				<div class="fab fa-php"></div>
+				<h4>PHP</h4>
+				<ul>
+					<li>Linguagem de programação</li>
+				</ul>
+				<p>O PHP é uma linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web e que pode ser embutida dentro do HTML.</p>
+			</div></a>
+			<a href="https://github.com/fabriciobarbosaviegas?tab=repositories&q=&type=&language=python" target="_blank"><div class="cards">
+				<div class="fab fa-python"></div>
+				<h4>Python</h4>
+				<ul>
+					<li>Linguagem de programação</li>
+				</ul>
+				<p>Python é uma linguagem de programação de alto nível, dinâmica, interpretada, modular, multiplataforma e orientada a objetos, usado especialmente em grandes projetos que envolvam ciência de dados.</p>
+			</div></a>
+			<a href="https://github.com/fabriciobarbosaviegas?tab=repositories&q=&type=&language=c" target="_blank"><div class="cards">
+				<div class="fab fa-cuttlefish"></div>
+				<h4>C</h4>
+				<ul>
+					<li>Linguagem de programação</li>
+				</ul>
+				<p>Pode ser usada em diversos tipos de projeto, como a criação de aplicativos, sistemas operacionais, drivers, entre outros. Trata-se de uma linguagem estruturada que se tornou muito popular nos anos 80 — tanto que é difícil encontrar arquiteturas para as quais não existam compiladores para a C, o que garante o seu elevado nível de portabilidade.</p>
+			</div></a>
+		</div>
+		<div id="containerProjetos">
+			<a><div class="cards">
+				<div class="fab fa-linux"></div>
+				<h4>Linux</h4>
+				<ul>
+					<li>Sistema operacional</li>
+				</ul>
+				<p>Linux é um Sistema Operacional, assim como o Windows e o Mac OS, que possibilita a execução de programas em um computador e outros dispositivos. Linux pode ser livremente modificado e distribuído.</p>
+			</div></a>
+			<a href="https://github.com/fabriciobarbosaviegas/Sistema-de-anotacoes-simples" target="_blank"><div class="cards">
+				<div class="fab fa-node-js"></div>
+				<h4>Node.js</h4>
+				<ul>
+					<li>Ambiente de execução Javascript</li>
+				</ul>
+				<p>Node.js é uma plataforma para construir aplicações web escaláveis de alta performance usando JavaScript.</p>
+			</div></a>
+			<a><div class="cards">
+				<div class="fab fa-envira"></div>
+				<h4>MongoDB</h4>
+				<ul>
+					<li>Banco de Dados</li>
+				</ul>
+				<p>MongoDB é um banco de dados de código aberto, gratuito, de alta performance, sem esquemas e orientado à documentos.</p>
+			</div></a>
+		</div>
+		<div id="containerProjetos">
+			<a href="https://github.com/fabriciobarbosaviegas/Sistema-de-anotacoes-simples" target="_blank"><div class="cards">
+				<div class="fas fa-database"></div>
+				<h4>MySQL</h4>
+				<ul>
+					<li>Banco de Dados</li>
+				</ul>
+				<p>O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface. É atualmente um dos sistemas de gerenciamento de bancos de dados mais populares.</p>
+			</div></a>
+			<a href="https://github.com/fabriciobarbosaviegas/Sistema-de-anotacoes-simples" target="_blank"><div class="cards">
+				<div class="fas fa-database"></div>
+				<h4>MariaDB</h4>
+				<ul>
+					<li>Banco de Dados</li>
+				</ul>
+				<p>MariaDB é um gerenciador de banco de dados que surgiu como fork do MySQL, criado pelo próprio fundador do projeto após sua aquisição pela Oracle.</p>
+			</div></a>
+			<a><div class="cards">
+				<div class="fab fa-wordpress"></div>
+				<h4>Wordpress</h4>
+				<ul>
+					<li>Sistema de Gestão de Conteúdo</li>
+				</ul>
+				<p>WordPress é um sistema livre e aberto de gestão de conteúdo para internet, baseado em PHP com banco de dados MySQL, executado em um servidor interpretador, voltado principalmente para a criação de páginas eletrônicas e blogs online.</p>
+			</div></a>
+		</div>
+		<div id="containerProjetos">
+			<a><div class="cards">
+				<div class="fab fa-git-alt"></div>
+				<h4>Git</h4>
+				<ul>
+					<li>Sistema de controle de versões</li>
+				</ul>
+				<p>Git é um sistema de controle de versão de arquivos. Através dele pode-se desenvolver projetos no qual diversas pessoas podem contribuir simultaneamente, editando e criando novos arquivos, permitindo que os mesmos possam existir sem o risco de suas alterações serem sobrescritas.</p>
+			</div></a>
+			<a><div class="cards">
+				<div class="fas fa-photo-video"></div>
+				<h4>Photoshop</h4>
+				<ul>
+					<li>Software de edição</li>
+				</ul>
+				<p>Adobe Photoshop é um software caracterizado como editor de imagens bidimensionais do tipo raster desenvolvido pela Adobe Systems. É considerado o líder no mercado dos editores de imagem profissionais, assim como o programa de facto para edição profissional de imagens digitais e trabalhos de pré-impressão.</p>
+			</div></a>
 		</div>
 	</section>
 	<section id="projetos" data-type="Projetos">
@@ -147,7 +253,7 @@
 					<li>Node</li>
 					<li>Javascript</li>
 				</ul>
-				<p>Um bloco de notas simples, usando apenas Node js.</p>
+				<p>Um bloco de notas simples, capaz de categorizar e organizar suas notas usando apenas Node js.</p>
 			</div></a>
 			<a href="https://github.com/fabriciobarbosaviegas/sistema-de-reproducao-de-audios-em-js" target="_blank"><div class="cards">
 				<div class="material-icons">equalizer</div>
@@ -190,6 +296,68 @@
 			</div></a>
 		</div>
 	</section>
+	<section id="contato" data-type="Contato">
+		<div>
+			<h3>Contato:</h3>
+		</div>
+		<div id="containerProjetos">
+			<a><div class="cards">
+				<div class="fab fa-whatsapp"></div>
+				<p>Telefone para<span style="opacity: 0">aa</span> contato/whatsapp:</p>
+				<p>(51)997279808</p>
+			</div></a>
+			<a href="mailto:propostasfabriciobarbosa@gmail.com" target="_blank"><div class="cards">
+				<div class="fas fa-at"></div>
+				<p>E-mail para contato:</p>
+				<p>propostasfabriciobarbosa@gmail.com</p>
+			</div></a>
+			<a href="https://github.com/fabriciobarbosaviegas/" target="_blank"><div class="cards">
+				<div class="fab fa-github"></div>
+				<p>GitHub/Mais projetos:</p>
+				<p>/fabriciobarbosaviegas</p>
+			</div></a>
+		</div>
+	</section>
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>Sobre mim</h2>
+          <div class="content">
+            <p style="color: white">Gosto de trabalhar com novas ferramentas e tecnologias, buscando sempre aprimorar minhas abilidades como desenvolvedor.</p>
+            <div class="social">
+              <a href="https://github.com/fabriciobarbosaviegas/"><span class="fab fa-github"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="center box">
+          <h2>Contato</h2>
+          <div class="content">
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">(51)997279808</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-at"></span>
+              <span class="text">propostasfabriciobarbosa@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="right box">
+          <h2>Links</h2>
+          <div class="content">
+          	<a href="#home"><p>Home</p></a>
+          	<a href="#sobre"><p>Sobre</p></a>
+          	<a href="#escolaridade"><p>Escolaridade</p></a>
+          	<a href="#skills"><p>Skills</p></a>
+          	<a href="#projetos"><p>Projetos</p></a>
+          	<a href="#contato"><p>Contato</p></a>
+          	<a href="#us"><p>us</p></a>
+          </div>
+        </div>
+      </div>
+    </footer>
 <script type="text/javascript" src="/js/main.js"></script>
 </body>
 </html>
