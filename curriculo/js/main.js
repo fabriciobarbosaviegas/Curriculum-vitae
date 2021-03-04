@@ -1,4 +1,3 @@
-//active menu
 var sections = document.querySelectorAll("section");
 
 onscroll = function () {
@@ -50,22 +49,15 @@ navLinks.forEach((link) => {
   });
 });
 
-
-
-
-// Initialising the canvas
 var canvas = document.querySelector('canvas'),
     ctx = canvas.getContext('2d');
 
-// Setting the width and height of the canvas
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-// Setting up the letters
 var letters = 'MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!MECONTRATA!';
 letters = letters.split('');
 
-// Setting up the columns
 var fontSize = 10,
     columns = canvas.width / fontSize;
 
@@ -141,7 +133,6 @@ var TxtType = function(el, toRotate, period) {
               new TxtType(elements[i], JSON.parse(toRotate), period);
             }
         }
-        // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
